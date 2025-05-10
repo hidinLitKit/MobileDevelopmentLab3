@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ListLab</string>
+    <string name="preference_key_faculty_list">faculty_List</string>
+    <string-array name="SEX">
+        <item>Женский</item>
+        <item>Мужской</item>
+    </string-array>
+</resources>
