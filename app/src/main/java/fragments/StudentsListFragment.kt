@@ -140,8 +140,14 @@ class StudentsListFragment : Fragment() {
             lastView?.findViewById<ConstraintLayout>(R.id.clStudent)?.setBackgroundColor(
                 ContextCompat.getColor(requireContext(), R.color.white)
             )
+            lastView?.findViewById<TextView>(R.id.tvStudentName)?.setTextColor(
+                ContextCompat.getColor(requireContext(), R.color.black)
+            )
             view.findViewById<ConstraintLayout>(R.id.clStudent).setBackgroundColor(
                 ContextCompat.getColor(requireContext(),R.color.selected_element)
+            )
+            view?.findViewById<TextView>(R.id.tvStudentName)?.setTextColor(
+                ContextCompat.getColor(requireContext(), R.color.white)
             )
             lastView = view
         }
