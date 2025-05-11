@@ -79,7 +79,7 @@ class GroupFragment : Fragment(), MainActivity.Edit {
     {
         AlertDialog.Builder(requireContext())
             .setTitle("Удаление")
-            .setMessage("Вы действительно хотите удалить группу ${viewModel.faculty?.name ?: "" }?")
+            .setMessage("Вы действительно хотите удалить группу ${viewModel.group?.name ?: "" }?")
             .setPositiveButton("Да"){ _, _ ->
                 viewModel.deleteGroup()
             }

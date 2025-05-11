@@ -87,7 +87,10 @@ class MainRepository private constructor(){
     }
 
     fun updateFaculty(faculty: Faculty){
-        addFaculty(faculty)
+        myCoroutineScope.launch {
+            listDB.updateFaculty(faculty)
+        }
+
     }
 
     fun deleteFaculty(faculty: Faculty){
@@ -186,7 +189,9 @@ class MainRepository private constructor(){
     fun getGroupPosition() = getGroupPosition(group.value ?: Group())
 
     fun updateGroup(group: Group) {
-        newGroup(group)
+        myCoroutineScope.launch {
+            listDB.updateGroup(group)
+        }
     }
 
     fun deleteGroup(group: Group) {

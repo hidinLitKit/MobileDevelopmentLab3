@@ -28,7 +28,7 @@ class GroupViewModel : ViewModel() {
         val group = Group()
         group.name = groupName
         group.facultyID = faculty?.id
-        MainRepository.getInstance().updateGroup(group!!)
+        MainRepository.getInstance().newGroup(group!!)
     }
 
     fun updateGroup(groupName: String){
