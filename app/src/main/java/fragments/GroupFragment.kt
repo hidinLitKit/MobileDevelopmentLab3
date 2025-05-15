@@ -156,7 +156,7 @@ class GroupFragment : Fragment(), MainActivity.Edit {
         }
 
         viewModel.setCurrentGroup(tabPosition)
-        binding.tbGroups.selectTab(binding.tbGroups.getTabAt(tabPosition), true)
+        //binding.tbGroups.selectTab(binding.tbGroups.getTabAt(tabPosition), true)
 
         binding.tbGroups.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {

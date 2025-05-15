@@ -74,7 +74,7 @@ class StudentFragment : Fragment() {
             }
         binding.cvBirthDate.setOnDateChangeListener{ view, year, month, dayOfMonth ->
                 student.birthDate.time =
-                    SimpleDateFormat("yyyy.MM.dd").parse("$year.$month.$dayOfMonth")?.time ?: student.birthDate.time
+                    SimpleDateFormat("yyyy.MM.dd").parse("$year.${month+1}.$dayOfMonth")?.time ?: student.birthDate.time
         }
         binding.etFirstName.setText(student.firstName)
         binding.etMiddleName.setText(student.middleName)
